@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Crafting Your Next Competitive Advantage"
-  content: "Scale smarter and faster with our elite consulting and custom software—where visionary strategy meets precision execution"
+  title: "Tailored Software Solutions That Drive Business Growth"
+  content: "Enhance your operations and accelerate growth with our tailored software solutions and expert strategic guidance"
   image: "/images/banner.webp"
   button:
     enable: true
