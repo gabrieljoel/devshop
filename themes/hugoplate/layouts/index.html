@@ -2,38 +2,38 @@
 
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="pt-14">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap -mx-4">
-          <!-- Text Column -->
-          <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-            <div class="text-left">
-              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                {{ .title | markdownify }}
-              </h1>
-              <p class="text-lg mb-8">
-                {{ .content | markdownify }}
-              </p>
-              {{ with .button }}
-                {{ if .enable }}
-                  <a class="btn btn-primary inline-block" href="{{ .link | absURL }}"
-                    {{ if strings.HasPrefix .link `http` }}
-                      target="_blank" rel="noopener"
-                    {{ end }}>
-                    {{ .label }}
-                    <i class="fa fa-arrow-right pl-2"></i>
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-          <!-- Image Column -->
-          <div class="w-full md:w-1/2 px-4">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full h-auto object-cover object-center" "DisplayXL" "800x") }}
+  <section class="pt-14">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap -mx-4 items-center">
+        <!-- Text Column -->
+        <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+          <div class="text-left">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+              {{ .title | markdownify }}
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300">
+              {{ .content | markdownify }}
+            </p>
+            {{ with .button }}
+            {{ if .enable }}
+              <a class="btn btn-primary inline-block" href="{{ .link | absURL }}"
+                {{ if strings.HasPrefix .link `http` }}
+                  target="_blank" rel="noopener"
+                {{ end }}>
+                {{ .label }}
+                <i class="fa fa-arrow-right pl-2"></i>
+              </a>
+            {{ end }}
+            {{ end }}
           </div>
         </div>
+        <!-- Image Column -->
+        <div class="w-full md:w-1/2 px-4">
+          {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "max-w-full h-auto object-cover object-center rounded-lg shadow-lg" "DisplayXL" "800x") }}
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
   {{ end }}
   <!-- /Banner -->
 
