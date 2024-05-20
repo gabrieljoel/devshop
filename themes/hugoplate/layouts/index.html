@@ -1,32 +1,35 @@
 {{ define "main" }}
+
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
-              {{ .title | markdownify }}
-            </h1>
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
+    <section class="pt-14">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+          <!-- Text Column -->
+          <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+            <div class="text-left">
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                {{ .title | markdownify }}
+              </h1>
+              <p class="text-lg mb-8">
+                {{ .content | markdownify }}
+              </p>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a class="btn btn-primary inline-block" href="{{ .link | absURL }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
               {{ end }}
-            {{ end }}
+            </div>
           </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+          <!-- Image Column -->
+          <div class="w-full md:w-1/2 px-4">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full h-auto object-cover object-center" "DisplayXL" "800x") }}
           </div>
         </div>
       </div>
@@ -34,7 +37,7 @@
   {{ end }}
   <!-- /Banner -->
 
-    <!-- Testimonials -->
+  <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
       <section class="section bg-gradient">
