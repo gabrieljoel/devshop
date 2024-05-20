@@ -1,1 +1,15 @@
 // Add your own custom styles here
+
+.diagonal-transition::before {
+  content: "";
+  position: absolute;
+  top: -8rem; /* Adjust this value based on the height of the diagonal */
+  left: 0;
+  width: 100%;
+  height: 180px; /* Height of the diagonal section */
+  background: #AF98D1; /* Set the diagonal's color to match the border color */
+  transform: skewY(-2.9deg); /* Creates the diagonal effect */
+  z-index: 1;
+}
+
+
