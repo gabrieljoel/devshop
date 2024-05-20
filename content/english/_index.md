@@ -3,7 +3,7 @@
 banner:
   title: "Tailored Software Solutions: Crafting Your Competitive Edge"
   content: "Streamline operations and secure market leadership with our precision-engineered software and strategic expertise"
-  image: "/images/banner.webp"
+  image: "/images/banner.png"
   button:
     enable: true
     label: "Start Your Strategy Session"
