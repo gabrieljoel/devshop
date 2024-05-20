@@ -35,3 +35,28 @@
   transform: skewY(-2.5deg); /* Reverse skew direction for bottom transition */
   z-index: 1; /* Ensure it doesn't overlap content unless explicitly desired */
 }
+
+$primary: theme('colors.primary');
+$theme-dark: theme('colors.theme-dark');
+
+.grid-overlay {
+  @apply bg-gradient-to-b;
+  background-image: linear-gradient(to bottom, $primary, $theme-dark);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  // Ensure all content in the section is positioned above the background and grid
+  > .container {
+    position: relative;
+  }
+}
+
