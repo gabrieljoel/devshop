@@ -11,41 +11,37 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "Global Talent, Local Standards"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "Harness the best of global tech talent under Foundry64's expert leadership. Our in-house tools and practices guarantee consistent high-quality output, ensuring you receive exceptional value, not just savings."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Global Expertise: Selecting top tech talent globally."
+      - "Consistent Quality: Rigorous standards maintained through proprietary processes."
+      - "Exceptional Value: Premium service, smartly priced for quality not cost."
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "Smarter Tech, Sharper Decisions"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "Step into the future with Foundry64's bespoke AI solutions that streamline your operations and enhance decision-making, all tailored to fit seamlessly into your existing workflows."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "AI Customization: Solutions designed to fit your specific business needs."
+      - "Enhanced Efficiency: Streamlined operations with AI-driven processes."
+      - "Better Decisions: Data-driven insights at your fingertips."
     button:
       enable: true
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "From Vision to Execution: All-in-One Tech Development"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "All-In-One Team: One team, every tech need covered."
+      - "Faster Turnaround: Quick delivery with minimal handoffs."
+      - "Unified Approach: Consistent vision from start to finish."
     button:
       enable: false
       label: ""
