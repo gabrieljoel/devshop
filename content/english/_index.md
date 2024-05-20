@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Tailored Software Solutions: Crafting Your Competitive Edge"
-  content: "Enhance your operations and accelerate growth with our tailored software solutions and expert strategic guidance"
+  content: "Streamline operations and secure market leadership with our precision-engineered software and strategic expertise"
   image: "/images/banner.webp"
   button:
     enable: true
