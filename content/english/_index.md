@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Tailored Software Solutions That Drive Business Growth"
+  title: "Tailored Software Solutions: Crafting Your Competitive Edge"
   content: "Enhance your operations and accelerate growth with our tailored software solutions and expert strategic guidance"
   image: "/images/banner.webp"
   button:
