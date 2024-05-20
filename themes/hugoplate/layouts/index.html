@@ -2,16 +2,16 @@
 
   <!-- Banner -->
   {{ with .Params.banner }}
-  <section class="py-14">
+  <section class="py-14 bg-gradient-to-b from-primary to-theme-dark dark:from-primary dark:to-theme-dark">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4 items-center">
         <!-- Text Column -->
         <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
           <div class="text-left">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               {{ .title | markdownify }}
             </h1>
-            <p class="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300">
+            <p class="text-lg md:text-xl mb-8 text-gray-300">
               {{ .content | markdownify }}
             </p>
             {{ with .button }}
@@ -36,6 +36,7 @@
   </section>
   {{ end }}
   <!-- /Banner -->
+
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
