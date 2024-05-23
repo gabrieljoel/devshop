@@ -29,5 +29,9 @@
     "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwind-bootstrap-grid": "^5.1.0",
     "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "n": "^9.2.3",
+    "stable": "^0.1.8"
   }
 }
