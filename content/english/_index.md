@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Start Your Strategy Session"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "/contact"
 
 # Features
 features:
