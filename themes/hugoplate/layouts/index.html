@@ -1,46 +1,50 @@
 {{ define "main" }}
-
   <!-- Banner -->
   {{ with .Params.banner }}
-  <section class="py-14 bg-gradient-to-b from-primary to-theme-dark dark:from-primary dark:to-theme-dark grid-overlay">
-    <div class="container mx-auto px-4 z-10">
-      <div class="flex flex-wrap -mx-4 items-center">
-        <!-- Text Column -->
-        <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-          <div class="text-left">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              {{ .title | markdownify }}
-            </h1>
-            <p class="text-lg md:text-xl mb-8 text-gray-300">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-            {{ if .enable }}
-              <a class="btn btn-primary inline-block" href="{{ .link | absURL }}"
-                {{ if strings.HasPrefix .link `http` }}
-                  target="_blank" rel="noopener"
-                {{ end }}>
-                {{ .label }}
-                <i class="fa fa-arrow-right pl-2"></i>
-              </a>
-            {{ end }}
-            {{ end }}
+    <section
+      class="py-14 bg-gradient-to-b from-primary to-theme-dark dark:from-primary dark:to-theme-dark grid-overlay">
+      <div class="container mx-auto px-4 z-10">
+        <div class="flex flex-wrap -mx-4 items-center">
+          <!-- Text Column -->
+          <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+            <div class="text-left">
+              <h1
+                class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                {{ .title | markdownify }}
+              </h1>
+              <p class="text-lg md:text-xl mb-8 text-gray-300">
+                {{ .content | markdownify }}
+              </p>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-primary inline-block"
+                    href="{{ .link | absURL }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+          <!-- Image Column -->
+          <div class="w-full md:w-1/2 px-4">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "max-w-full h-auto object-cover object-center rounded-lg shadow-lg" "DisplayXL" "800x") }}
           </div>
         </div>
-        <!-- Image Column -->
-        <div class="w-full md:w-1/2 px-4">
-          {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "max-w-full h-auto object-cover object-center rounded-lg shadow-lg" "DisplayXL" "800x") }}
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
   {{ end }}
   <!-- /Banner -->
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
-      <section class="section bg-gradient relative overflow-hidden diagonal-transition">
+      <section
+        class="section bg-gradient relative overflow-hidden diagonal-transition">
         <div class="container">
           <div class="row">
             <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
@@ -103,7 +107,12 @@
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
-    <section class="section-sm relative overflow-hidden {{ if (modBool $i 2) }}bg-gradient left-diagonal-transition{{ else }}right-diagonal-transition{{ end }}">
+    <section
+      class="section-sm relative overflow-hidden {{ if (modBool $i 2) }}
+        bg-gradient left-diagonal-transition
+      {{ else }}
+        right-diagonal-transition
+      {{ end }}">
       <div class="container">
         <div class="row items-center justify-between">
           <div
@@ -145,4 +154,28 @@
   {{ end }}
   <!-- /Features -->
 
+  <!-- Additional UI Signup Section -->
+  <div
+    class="flex justify-center px-2 bg-theme-light dark:bg-darkmode-theme-light">
+    <div class="max-w-2xl px-3 py-5 rounded-2xl md:px-8 md:py-7">
+      <h4 class="text-2xl font-semibold tracking-wide">
+        Connect with us! Insights from Gabe and Ify
+      </h4>
+      <p class="max-w-xl mt-2 leading-relaxed lg:text-lg">
+        Get the inside track on revolutionary AI and tech with our
+        newsletter—direct from the trailblazers driving change
+      </p>
+      <div class="my-4 sm:flex sm:flex-row sm:justify-evenly">
+        <input
+          class="block w-full px-4 py-3 mt-3 text-gray-800 placeholder-gray-500 bg-white border border-gray-300 rounded-md appearance-none sm:max-w-xs focus:outline-none focus:ring focus:ring-blue-50 focus:border-blue-300"
+          type="email"
+          placeholder="Enter your email"
+          value="" />
+        <button
+          class="btn btn-primary block w-full py-3 mt-3 font-bold tracking-wide rounded shadow sm:ml-3 md:w-52 focus">
+          <span class="block">Subscribe</span>
+        </button>
+      </div>
+    </div>
+  </div>
 {{ end }}
