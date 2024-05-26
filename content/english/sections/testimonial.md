@@ -18,7 +18,7 @@ testimonials:
   - name: "Dots Oyebolu"
     designation: "Director of Ad Strategy, [Listen Network](https://www.listennetwork.co)"
     avatar: "/images/testimonials/dots.jpeg"
-    content: "I met Gabriel over a year ago as just another 'Developer'. What I didn't know is that his product development acumen is the stuff of SaaS legend! Gabriel is willing to research, try, and optimize. He is a miracle-working IT leader with too many ideas. All the work I have done with Gabriel has helped to drive my industry forward as a whole, not just solve customer needs."
+    content: "Meeting Gabriel transformed my view of what a 'Developer' could be. His approach to SaaS products is legendary—always ready to research, try, and optimize. He is a miracle-working IT leader with too many ideas. Working with him has propelled our entire industry forward."
 
   - name: "Ashley Keith"
     designation: "Co-Founder & CBO, [CITYROW](https://cityrow.com)"
@@ -28,10 +28,10 @@ testimonials:
   - name: "Marisel Polanco"
     designation: "Co-Founder & Industry Expert, [GyftGram](https://gyftgram.io)"
     avatar: "/images/testimonials/marisel.jpeg"
-    content: "As someone deeply invested in the hospitality and entertainment industry, finding the right tech partner to bring GyftGram's vision to life was crucial. That's where Gabriel and his team came in, and I couldn't be happier with our collaboration. Gabriel's understanding of our industry's unique needs was evident from day one. Working with Gabriel was not just a service experience but a partnership that added substantial value to GyftGram."
+    content: "Finding the right tech partner was critical for GyftGram. Gabriel and his team exceeded our expectations, deeply understanding our unique industry needs and forming a genuine partnership that greatly enhanced our vision. I couldn't be happier with our collaboration."
 
   - name: "Kimberly Pace Becker, Ph.D."
-    designation: "Co-Founder & Corpus Linguist, [Moxie](https://academicinsightlab.org)"
+    designation: "Co-Founder, [Moxie](https://academicinsightlab.org)"
     avatar: "/images/testimonials/kimberly.jpeg"
     content: "Gabe is not only a fantastic developer, he's also a lovely colleague. He quickly got to work building what we asked for, and he did it well in a reasonable time frame at a reasonable price. We would absolutely hire him again without reservation."
 
