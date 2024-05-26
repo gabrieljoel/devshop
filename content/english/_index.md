@@ -36,7 +36,7 @@ features:
       link: "/contact"
 
   - title: "From Vision to Execution: All-in-One Tech Development"
-    image: "/images/features/team.webp"
+    image: "/images/features/team.png"
     content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
     bulletpoints:
       - "All-In-One Team: One team, every tech need covered."
