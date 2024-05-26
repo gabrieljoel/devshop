@@ -11,16 +11,16 @@ banner:
 
 # Features
 features:
-  - title: "Global Talent, Local Standards"
-    image: "/images/features/global.jpeg"
-    content: "Harness the best of global tech talent under Foundry64's expert leadership. Our in-house tools and practices guarantee consistent high-quality output, ensuring you receive exceptional value, not just savings."
+  - title: "From Vision to Execution: All-in-One Tech Development"
+    image: "/images/features/team.jpeg"
+    content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
     bulletpoints:
-      - "Global Expertise: Selecting top tech talent globally."
-      - "Consistent Quality: Rigorous standards maintained through proprietary processes."
-      - "Exceptional Value: Premium service, smartly priced for quality not cost."
+      - "All-In-One Team: One team, every tech need covered."
+      - "Faster Turnaround: Quick delivery with minimal handoffs."
+      - "Unified Approach: Consistent vision from start to finish."
     button:
       enable: true
-      label: "Free Expert Consultation"
+      label: "Meet Ify and Gabe"
       link: "/contact"
 
   - title: "Smarter Tech, Sharper Decisions"
@@ -35,15 +35,15 @@ features:
       label: "Book a Free Meeting"
       link: "/contact"
 
-  - title: "From Vision to Execution: All-in-One Tech Development"
-    image: "/images/features/team.jpeg"
-    content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
+  - title: "Global Talent, Local Standards"
+    image: "/images/features/global.jpeg"
+    content: "Harness the best of global tech talent under Foundry64's expert leadership. Our in-house tools and practices guarantee consistent high-quality output, ensuring you receive exceptional value, not just savings."
     bulletpoints:
-      - "All-In-One Team: One team, every tech need covered."
-      - "Faster Turnaround: Quick delivery with minimal handoffs."
-      - "Unified Approach: Consistent vision from start to finish."
+      - "Global Expertise: Selecting top tech talent globally."
+      - "Consistent Quality: Rigorous standards maintained through proprietary processes."
+      - "Exceptional Value: Premium service, smartly priced for quality not cost."
     button:
       enable: true
-      label: "Meet Ify and Gabe"
+      label: "Free Expert Consultation"
       link: "/contact"
 ---
