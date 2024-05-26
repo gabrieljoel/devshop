@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "Global Talent, Local Standards"
-    image: "/images/features/global.webp"
+    image: "/images/features/global.jpeg"
     content: "Harness the best of global tech talent under Foundry64's expert leadership. Our in-house tools and practices guarantee consistent high-quality output, ensuring you receive exceptional value, not just savings."
     bulletpoints:
       - "Global Expertise: Selecting top tech talent globally."
@@ -24,7 +24,7 @@ features:
       link: "/contact"
 
   - title: "Smarter Tech, Sharper Decisions"
-    image: "/images/features/transformer.webp"
+    image: "/images/features/tech.jpeg"
     content: "Step into the future with Foundry64's bespoke AI solutions that streamline your operations and enhance decision-making, all tailored to fit seamlessly into your existing workflows."
     bulletpoints:
       - "AI Customization: Solutions designed to fit your specific business needs."
@@ -36,7 +36,7 @@ features:
       link: "/contact"
 
   - title: "From Vision to Execution: All-in-One Tech Development"
-    image: "/images/features/team.png"
+    image: "/images/features/team.jpeg"
     content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
     bulletpoints:
       - "All-In-One Team: One team, every tech need covered."
