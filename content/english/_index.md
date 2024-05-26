@@ -20,7 +20,7 @@ features:
       - "Unified Approach: Consistent vision from start to finish."
     button:
       enable: true
-      label: "Meet Ify and Gabe"
+      label: "Connect With Our Tech Leaders"
       link: "/contact"
 
   - title: "Smarter Tech, Sharper Decisions"
@@ -32,7 +32,7 @@ features:
       - "Better Decisions: Data-driven insights at your fingertips."
     button:
       enable: true
-      label: "Book a Free Meeting"
+      label: "Schedule Your Strategy Call"
       link: "/contact"
 
   - title: "Global Talent, Local Standards"
@@ -44,6 +44,6 @@ features:
       - "Exceptional Value: Premium service, smartly priced for quality not cost."
     button:
       enable: true
-      label: "Free Expert Consultation"
+      label: "Claim Your Expert Consultation"
       link: "/contact"
 ---
