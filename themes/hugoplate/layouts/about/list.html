@@ -1,11 +1,37 @@
 {{ define "main" }}
   <section class="section-sm">
     <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
-          {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
+      <div class="xl:flex xl:items-center xl:-mx-4">
+        <div class="xl:w-1/2 xl:mx-4">
+          <h1
+            class="text-3xl font-semibold text-gray-800 dark:text-white capitalize lg:text-4xl">
+            {{ .Title }}
+          </h1>
+
+          <p class="max-w-2xl mt-4 text-gray-500 dark:text-gray-300">
+            {{ .Params.content }}
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
+          {{ range .Params.team_members }}
+            <div>
+              <img
+                class="object-cover rounded-xl h-64 w-full"
+                src="{{ .image }}"
+                alt="{{ .name }}" />
+
+              <h1
+                class="mt-4 text-2xl font-semibold text-gray-700 dark:text-white capitalize">
+                {{ .name }}
+              </h1>
+
+              <p class="mt-2 text-gray-500 dark:text-gray-300 capitalize">
+                {{ .role }}
+              </p>
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>

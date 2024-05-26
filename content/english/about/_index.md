@@ -1,9 +1,15 @@
 ---
-title: "Empowering Innovation: Your Partner in Digital Excellence"
+title: "Your Partner in Digital Excellence"
 meta_title: "About"
 description: "this is meta description"
 image: "/images/avatar.png"
 draft: false
+content: "At Foundry64, we catalyze innovation. Our expert team combines cutting-edge technology with creative strategies to empower your digital journey. Whether you're a startup or an established enterprise, we provide tailored solutions to help you thrive in a dynamic digital world. Let's redefine the future together."
+team_members:
+  - name: "Gabriel J. Pérez Irizarry (Gabe)"
+    role: "Co-Founder"
+    image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+  - name: "Ifeanyichukwu Agu (Ify)"
+    role: "Co-Founder"
+    image: "https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
 ---
-
-At Foundry64, we're more than just a business—we're a catalyst for innovation. With a team rich in expertise and driven by passion, we're dedicated to empowering your digital journey. Whether you're a startup looking to disrupt the market or an established enterprise aiming to redefine your industry, we provide bespoke solutions that fuse cutting-edge technology with creative strategies. Our mission is to help you navigate the complexities of the digital landscape, ensuring that you not only survive but thrive in an ever-evolving world. Join us as we push the boundaries of what's possible, together.
