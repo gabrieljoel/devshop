@@ -19,9 +19,9 @@ features:
       - "Consistent Quality: Rigorous standards maintained through proprietary processes."
       - "Exceptional Value: Premium service, smartly priced for quality not cost."
     button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
+      enable: true
+      label: "Free Expert Consultation"
+      link: "/contact"
 
   - title: "Smarter Tech, Sharper Decisions"
     image: "/images/features/transformer.webp"
@@ -32,8 +32,8 @@ features:
       - "Better Decisions: Data-driven insights at your fingertips."
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Book a Free Meeting"
+      link: "/contact"
 
   - title: "From Vision to Execution: All-in-One Tech Development"
     image: "/images/features/team.webp"
@@ -43,7 +43,7 @@ features:
       - "Faster Turnaround: Quick delivery with minimal handoffs."
       - "Unified Approach: Consistent vision from start to finish."
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "Meet Ify and Gabe"
+      link: "/contact"
 ---
