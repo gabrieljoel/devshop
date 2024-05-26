@@ -1,10 +1,10 @@
 ---
-title: "Your Partner in Digital Excellence"
+title: "Meet Your Allies in Innovation"
 meta_title: "About"
 description: "this is meta description"
 image: "/images/avatar.png"
 draft: false
-content: "At Foundry64, we catalyze innovation. Our expert team combines cutting-edge technology with creative strategies to empower your digital journey. Whether you're a startup or an established enterprise, we provide tailored solutions to help you thrive in a dynamic digital world. Let's redefine the future together."
+content: "Welcome to Foundry64! I'm Gabe, and together with my co-founder Ify, we turn cutting-edge ideas into digital solutions that empower your business. We're more than just tech experts; we're your partners in redefining what's possible. Join us on this journey to innovate and achieve together."
 team_members:
   - name: "Gabriel J. Pérez Irizarry"
     role: "Co-Founder"
