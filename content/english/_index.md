@@ -25,11 +25,11 @@ features:
 
   - title: "Smarter Tech, Sharper Decisions"
     image: "/images/features/tech.jpeg"
-    content: "Step into the future with Foundry64's bespoke AI solutions that streamline your operations and enhance decision-making, all tailored to fit seamlessly into your existing workflows."
+    content: "Elevate your business landscape with Foundry64’s cutting-edge AI solutions. Our custom tech not only integrates smoothly into your existing systems but also transforms your operational efficiency and decision-making capabilities."
     bulletpoints:
-      - "AI Customization: Solutions designed to fit your specific business needs."
-      - "Enhanced Efficiency: Streamlined operations with AI-driven processes."
-      - "Better Decisions: Data-driven insights at your fingertips."
+      - "Tailored AI Integration: Precisely engineered to mesh with your business operations."
+      - "Operational Excellence: Achieve superior efficiency with AI-enhanced workflows."
+      - "Insightful Analytics: Gain actionable insights with advanced data analysis."
     button:
       enable: true
       label: "Schedule Your Strategy Call"
