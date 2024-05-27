@@ -11,13 +11,13 @@ banner:
 
 # Features
 features:
-  - title: "From Vision to Execution: All-in-One Tech Development"
+  - title: "From Vision to Execution: Seamless Tech Development"
     image: "/images/features/team.jpeg"
-    content: "Experience the convenience of having one dedicated team handle every aspect of your technology project—from initial design to final implementation. This streamlined approach speeds up delivery, simplifies communication, and integrates your project seamlessly."
+    content: "Experience the ease of a dedicated team that expertly manages your entire project. Our streamlined approach means fast, effective delivery—from design to execution—without the complexity of multiple contacts. Trust us to make smart, strategic decisions that propel your business forward."
     bulletpoints:
-      - "All-In-One Team: One team, every tech need covered."
-      - "Faster Turnaround: Quick delivery with minimal handoffs."
-      - "Unified Approach: Consistent vision from start to finish."
+    - "All-In-One Service: Design, quality assurance, and project management."
+    - "Quick & Streamlined: Faster results with a smaller, focused team."
+    - "Smart & Strategic: Decisions that align with your business goals."
     button:
       enable: true
       label: "Connect With Our Tech Leaders"
