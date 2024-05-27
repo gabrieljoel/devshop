@@ -1,0 +1,58 @@
+{{ define "main" }}
+   <!-- component -->
+<!--
+  Welcome to Tailwind Play, the official Tailwind CSS playground!
+
+  Everything here works just like it does when you're running Tailwind locally
+  with a real build pipeline. You can customize your config file, use features
+  like `@apply`, or even add third-party plugins.
+
+  Feel free to play with this example if you're just learning, or trash it and
+  start from scratch if you know enough to be dangerous. Have fun!
+-->
+{{ range $i, $e:= .Params.services }}
+<section
+      class="section-sm relative overflow-hidden {{ if (modBool $i 2) }}
+        bg-gradient left-diagonal-transition
+      {{ else }}
+        right-diagonal-transition
+      {{ end }}">
+ <div class="w-full items-center mx-auto max-w-screen-lg">
+    <div class="group grid w-full grid-cols-2">
+       <div>
+        <div class="pr-12">
+
+          <h3 class="mb-4 font-semibold text-xl text-gray-400">{{ .title }}</h3>
+          <p class="peer mb-6 text-gray-400">
+            {{ .content }}
+          </p>
+          
+          <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500">
+            {{ range .bulletpoints}}
+            <li>{{ . | markdownify }} </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="pr-16 relative flex flex-col before:block before:absolute before:h-1/6 before:w-4  border-bottom-color before:bottom-0 before:right-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden box-border">
+        <div class="absolute top-0 right-0 bg-theme-light opacity-90 w-4/6 px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-theme-dark transition-all dark:bg-purple-900 dark:group-hover:bg-black opacity-90">
+          <span class="block mb-10 font-bold group-hover:text-orange-300">{{ .blurb.title }}</span>
+          <h2 class="text-white font-bold text-2xl">
+          {{ .blurb.text }}
+          </h2>
+        </div>
+        <a class="font-bold text-sm flex mt-2 mb-8 items-center gap-2" href="{{ .button.link }}">
+          <span>MORE ABOUT US</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+        <div class="rounded-xl overflow-hidden">
+           {{ partial "image" (dict "Src" .image "Alt" .name "Class" "object-cover rounded-xl h-64 w-full") }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  {{ end }}
+  {{ end }}
