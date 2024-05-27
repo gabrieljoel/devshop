@@ -40,8 +40,9 @@ $primary: theme('colors.primary');
 $theme-dark: theme('colors.theme-dark');
 
 .grid-overlay {
-  @apply bg-gradient-to-b;
-  background-image: linear-gradient(to bottom, $primary, $theme-dark);
+  background: linear-gradient(-45deg, #5A348B, #483D8B, #346B8C, #2E3148, #2A2F44);
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 
   &::after {
     content: '';
@@ -60,3 +61,8 @@ $theme-dark: theme('colors.theme-dark');
   }
 }
 
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
