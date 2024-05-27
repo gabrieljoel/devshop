@@ -64,7 +64,7 @@ services:
       - "Ensure compliance with industry standards and regulations, such as GDPR, HIPAA, and PCI-DSS"
       - "Provide security awareness training to employees and stakeholders"
       - "Continuously monitor and respond to security threats and vulnerabilities"
-  - title: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)"
+  - title: "DevOps and Continuous Integration / Continuous Deployment (CI/CD)"
     bulletpoints:
       - "Implement DevOps practices for seamless collaboration between development and operations"
       - "Automate build, test, and deployment processes using CI/CD pipelines"

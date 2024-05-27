@@ -2,6 +2,7 @@
 (function () {
   "use strict";
 
+
   // Dropdown Menu Toggler For Mobile
   // ----------------------------------------
   const dropdownMenuToggler = document.querySelectorAll(
@@ -34,3 +35,21 @@
     },
   });
 })();
+
+
+  // Services search feature
+  // -----------------------------------------
+  function searchServices(event) {
+    const searchTerm = event.target.value.toLowerCase();
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    serviceItems.forEach(item => {
+      const title = item.getAttribute('data-title');
+
+      if (title.includes(searchTerm)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }

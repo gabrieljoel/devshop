@@ -1,5 +1,5 @@
 ---
-title: "Custom Wed Development Services"
+title: "Custom Web Development Services"
 services:
  - title: "Full-Stack Web Application Development"
    bulletpoints:
