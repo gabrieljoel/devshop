@@ -11,11 +11,11 @@ banner:
 
 # Features
 features:
-  - title: "From Vision to Execution: Seamless Tech Development"
+  - title: "From Vision to Execution: Expert Tech Development"
     image: "/images/features/team.jpeg"
-    content: "Experience the ease of a dedicated team that expertly manages your entire project. Our streamlined approach means fast, effective delivery—from design to execution—without the complexity of multiple contacts. Trust us to make smart, strategic decisions that propel your business forward."
+    content: "Enjoy the simplicity of collaborating with a single, dedicated team that handles every stage of your project. Our efficient process ensures quick and high-quality delivery—from initial design through to completion—eliminating the hassle of multiple points of contact."
     bulletpoints:
-      - "All-In-One Service: Design, quality assurance, and project management."
+      - "All-In-One Service: Design, quality assurance, and deployment."
       - "Quick & Streamlined: Faster results with a smaller, focused team."
       - "Smart & Strategic: Decisions that align with your business goals."
     button:
