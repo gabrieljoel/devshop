@@ -58,7 +58,7 @@ module.exports = {
         dark: theme.colors.default.text_color.dark,
         primary: theme.colors.default.theme_color.primary,
         secondary: theme.colors.default.theme_color.secondary,
-        "transparent": hexToRGBA(theme.colors.default.theme_color.border, 0.6),
+        "transparent": hexToRGBA(theme.colors.default.theme_color.primary, 0.6),
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
