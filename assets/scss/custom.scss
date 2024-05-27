@@ -36,9 +36,6 @@
   z-index: 1; /* Ensure it doesn't overlap content unless explicitly desired */
 }
 
-$primary: theme('colors.primary');
-$theme-dark: theme('colors.theme-dark');
-
 .grid-overlay {
   background: linear-gradient(-45deg, #5A348B, #483D8B, #346B8C, #2E3148, #2A2F44);
   background-size: 400% 400%;
