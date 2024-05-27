@@ -6,7 +6,8 @@ draft: false
 
 services:
   - title: "Technology Consulting Services"
-    image: "/images/services/tech.webp"
+    imageLight: "/images/services/tech.webp"
+    imageDark: "/images/services/tech-dark.webp"
     content: "Our technology consulting services are designed to help you align your IT strategy with your business goals. Our team of experienced consultants will work closely with you to understand your unique challenges and provide tailored recommendations to optimize your technology infrastructure. We stay up-to-date with the latest industry trends and best practices to ensure you stay ahead of the competition."
     bulletpoints:
       - "Align your technology strategy with your business objectives."
@@ -21,7 +22,8 @@ services:
       link: "/services/tech-consulting"
 
   - title: "Custom Web Application Development"
-    image: "/images/services/web.webp"
+    imageLight: "/images/services/web.webp"
+    imageDark: "/images/services/web-dark.webp"
     content: "We specialize in developing custom web applications that are tailored to your specific business requirements. Our team of skilled developers combines their expertise with the latest web technologies and frameworks to create scalable, secure, and user-friendly applications. We follow a collaborative development process that ensures your application meets your exact needs and exceeds your expectations."
     bulletpoints:
       - "Tailored web applications that meet your unique business needs."
@@ -36,7 +38,8 @@ services:
       link: "/services/web-development"
 
   - title: "Bespoke Artificial Intelligence Solutions"
-    image: "/images/services/ai.webp"
+    imageLight: "/images/services/ai.webp"
+    imageDark: "/images/services/ai-dark.webp"
     content: "Our bespoke artificial intelligence solutions are designed to help you harness the power of AI to drive innovation and efficiency within your organization. We work closely with you to understand your specific requirements and develop custom algorithms and models that integrate seamlessly with your existing systems. Our AI experts will guide you through the process and ensure that you leverage cutting-edge AI technologies to automate processes, gain valuable insights, and enhance decision-making."
     bulletpoints:
       - "Custom AI algorithms and models tailored to your needs."

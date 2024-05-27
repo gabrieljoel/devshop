@@ -22,12 +22,12 @@
        <div>
         <div class="pr-12">
 
-          <h3 class="mb-4 font-semibold text-xl text-gray-400">{{ .title }}</h3>
-          <p class="peer mb-6 text-gray-400">
+          <h3 class="mb-4 font-semibold text-xl text-gray-800 dark:text-white">{{ .title }}</h3>
+          <p class="peer mb-6 text-gray-500 dark:text-gray-300">
             {{ .content }}
           </p>
           
-          <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500">
+          <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500  dark:text-slate-300">
             {{ range .bulletpoints}}
             <li>{{ . | markdownify }} </li>
             {{ end }}
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="pr-16 relative flex flex-col before:block before:absolute before:h-1/6 before:w-4  border-bottom-color before:bottom-0 before:right-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden box-border">
-        <div class="absolute top-0 right-0 bg-theme-light opacity-90 w-4/6 px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-theme-dark transition-all dark:bg-purple-900 dark:group-hover:bg-black opacity-90">
+        <div class="absolute top-0 right-0 bg-theme-light opacity-95 w-4/6 px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-theme-dark transition-all dark:bg-purple-900 dark:group-hover:bg-black opacity-95">
           <span class="block mb-10 font-bold group-hover:text-orange-300">{{ .blurb.title }}</span>
           <h2 class="text-white font-bold text-2xl">
           {{ .blurb.text }}
@@ -48,7 +48,9 @@
           </svg>
         </a>
         <div class="rounded-xl overflow-hidden">
-           {{ partial "image" (dict "Src" .image "Alt" .name "Class" "object-cover rounded-xl h-64 w-full") }}
+          {{ partial "image" (dict "Src" .imageDark "Alt" .name "Class" "object-cover rounded-xl h-64 w-full hidden dark:block" "media" "(prefers-color-scheme: dark)") }}
+          {{ partial "image" (dict "Src" .imageLight "Alt" .name "Class" "object-cover rounded-xl h-64 w-full block dark:hidden") }}
+         
         </div>
       </div>
     </div>
