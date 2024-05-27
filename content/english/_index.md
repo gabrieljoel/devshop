@@ -15,35 +15,35 @@ features:
     image: "/images/features/team.jpeg"
     content: "Experience the ease of a dedicated team that expertly manages your entire project. Our streamlined approach means fast, effective delivery—from design to execution—without the complexity of multiple contacts. Trust us to make smart, strategic decisions that propel your business forward."
     bulletpoints:
-    - "All-In-One Service: Design, quality assurance, and project management."
-    - "Quick & Streamlined: Faster results with a smaller, focused team."
-    - "Smart & Strategic: Decisions that align with your business goals."
+      - "All-In-One Service: Design, quality assurance, and project management."
+      - "Quick & Streamlined: Faster results with a smaller, focused team."
+      - "Smart & Strategic: Decisions that align with your business goals."
     button:
       enable: true
       label: "Connect With Our Tech Leaders"
       link: "/contact"
 
-  - title: "Smarter Tech, Sharper Decisions"
+  - title: "Gain the AI Advantage: Streamline Operations and Boost Productivity"
     image: "/images/features/tech.jpeg"
-    content: "Elevate your business landscape with Foundry64’s cutting-edge AI solutions. Our custom tech not only integrates smoothly into your existing systems but also transforms your operational efficiency and decision-making capabilities."
+    content: "Revolutionize your business with Foundry64’s AI solutions. Seamlessly upgrade your systems to boost productivity and keep your edge in the competitive market. Don’t let your business fall behind—embrace AI today."
     bulletpoints:
-      - "Tailored AI Integration: Precisely engineered to mesh with your business operations."
-      - "Operational Excellence: Achieve superior efficiency with AI-enhanced workflows."
-      - "Insightful Analytics: Gain actionable insights with advanced data analysis."
+      - "Custom AI Solutions: Designed for your business needs."
+      - "Enhance Productivity: Simplify tasks and accelerate workflows."
+      - "Competitive Advantage: Stay ahead with cutting-edge AI."
     button:
       enable: true
       label: "Schedule Your Strategy Call"
       link: "/contact"
 
-  - title: "Global Talent, Local Standards"
+  - title: "Global Expertise, Consistently High Standards"
     image: "/images/features/global.jpeg"
-    content: "Harness the best of global tech talent under Foundry64's expert leadership. Our in-house tools and practices guarantee consistent high-quality output, ensuring you receive exceptional value, not just savings."
+    content: "Leverage world-class tech talent guided by Foundry64's expert leadership. We employ specialized tools and practices to ensure consistent, top-tier quality across all projects. Experience exceptional value that goes beyond cost savings."
     bulletpoints:
-      - "Global Expertise: Selecting top tech talent globally."
-      - "Consistent Quality: Rigorous standards maintained through proprietary processes."
-      - "Exceptional Value: Premium service, smartly priced for quality not cost."
+      - "Select Global Talent: Access the finest tech professionals worldwide."
+      - "Guaranteed Quality: Uphold high standards with our proven methodologies."
+      - "Superior Value: High-quality service at a smart price."
     button:
       enable: true
-      label: "Claim Your Expert Consultation"
+      label: "Secure Your Expert Consultation"
       link: "/contact"
 ---
