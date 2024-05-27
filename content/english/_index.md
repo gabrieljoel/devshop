@@ -1,12 +1,12 @@
 ---
 # Banner
 banner:
-  title: "Tailored Software Solutions: Crafting Your Competitive Edge"
-  content: "Streamline operations and secure market leadership with our precision-engineered software and strategic expertise"
+  title: "Drive Your Business Forward with Custom Software Solutions"
+  content: "Boost efficiency and outpace competitors with software designed just for you. Our team ensures your business tools are easy to use, perfectly matched to your needs, and ready to grow with you."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Start Your Strategy Session"
+    label: "Start Your Free Consultation"
     link: "/contact"
 
 # Features
