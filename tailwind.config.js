@@ -26,6 +26,14 @@ if (theme.fonts.font_family.secondary) {
   fontSecondaryType = theme.fonts.font_family.secondary_type;
 }
 
+function hexToRGBA(hex, alpha = 1) {
+  let r = parseInt(hex.slice(1, 3), 16),
+      g = parseInt(hex.slice(3, 5), 16),
+      b = parseInt(hex.slice(5, 7), 16);
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./hugo_stats.json"],
@@ -50,6 +58,7 @@ module.exports = {
         dark: theme.colors.default.text_color.dark,
         primary: theme.colors.default.theme_color.primary,
         secondary: theme.colors.default.theme_color.secondary,
+        "transparent": hexToRGBA(theme.colors.default.theme_color.border, 0.6),
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
@@ -59,6 +68,7 @@ module.exports = {
           light: theme.colors.darkmode.text_color.light,
           dark: theme.colors.darkmode.text_color.dark,
           primary: theme.colors.darkmode.theme_color.primary,
+          "transparent": hexToRGBA(theme.colors.darkmode.theme_color.primary, 0.6),
           secondary: theme.colors.darkmode.theme_color.secondary,
           body: theme.colors.darkmode.theme_color.body,
           border: theme.colors.darkmode.theme_color.border,
