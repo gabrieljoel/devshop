@@ -18,9 +18,29 @@
         right-diagonal-transition
       {{ end }}">
  <div class="w-full items-center mx-auto max-w-screen-lg">
-    <div class="group grid w-full grid-cols-2">
-       <div>
-        <div class="pr-12">
+    <div class="group grid w-full cols-1 md:grid-cols-2">
+
+      <div class="m-3 pr-16 {{ if (modBool $i 2) }} md:order-1 {{ else }} md:order-0 {{ end }} relative flex flex-col before:block before:absolute before:h-1/6 before:w-4  border-bottom-color before:bottom-0 before:right-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden box-border">
+        <div class="absolute top-0 right-0 bg-theme-light opacity-95 w-4/6 px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-theme-dark transition-all dark:bg-purple-900 dark:group-hover:bg-black opacity-95">
+          <span class="block mb-10 font-bold group-hover:text-orange-300 text-sm xs:text-lg md:text-lg">{{ .blurb.title }}</span>
+          <span class="text-white font-bold text-sm xs:text-2xl md:text-xl ">
+          {{ .blurb.text }}
+          </span>
+        </div>
+        <a class="font-bold text-xs xs:text-sm flex mt-2 mb-8 items-center gap-2" href="{{ .button.link }}">
+          <span>MORE ABOUT US</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+        <div class="rounded-xl overflow-hidden">
+          {{ partial "image" (dict "Src" .imageDark "Alt" .name "Class" "object-cover rounded-xl h-64 w-full hidden dark:block" "media" "(prefers-color-scheme: dark)") }}
+          {{ partial "image" (dict "Src" .imageLight "Alt" .name "Class" "object-cover rounded-xl h-64 w-full block dark:hidden") }}
+         
+        </div>
+      </div>
+       <div class="m-3">
+        <div class="md:pr-12 {{ if (modBool $i 2) }} md:order-0 {{ else }} md:order-1 {{ end }}">
 
           <h3 class="mb-4 font-semibold text-xl text-gray-800 dark:text-white">{{ .title }}</h3>
           <p class="peer mb-6 text-gray-500 dark:text-gray-300">
@@ -32,25 +52,6 @@
             <li>{{ . | markdownify }} </li>
             {{ end }}
           </ul>
-        </div>
-      </div>
-      <div class="pr-16 relative flex flex-col before:block before:absolute before:h-1/6 before:w-4  border-bottom-color before:bottom-0 before:right-0 before:rounded-lg  before:transition-all group-hover:before:bg-orange-300 overflow-hidden box-border">
-        <div class="absolute top-0 right-0 bg-theme-light opacity-95 w-4/6 px-12 py-14 flex flex-col justify-center rounded-xl group-hover:bg-theme-dark transition-all dark:bg-purple-900 dark:group-hover:bg-black opacity-95">
-          <span class="block mb-10 font-bold group-hover:text-orange-300">{{ .blurb.title }}</span>
-          <h2 class="text-white font-bold text-2xl">
-          {{ .blurb.text }}
-          </h2>
-        </div>
-        <a class="font-bold text-sm flex mt-2 mb-8 items-center gap-2" href="{{ .button.link }}">
-          <span>MORE ABOUT US</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </a>
-        <div class="rounded-xl overflow-hidden">
-          {{ partial "image" (dict "Src" .imageDark "Alt" .name "Class" "object-cover rounded-xl h-64 w-full hidden dark:block" "media" "(prefers-color-scheme: dark)") }}
-          {{ partial "image" (dict "Src" .imageLight "Alt" .name "Class" "object-cover rounded-xl h-64 w-full block dark:hidden") }}
-         
         </div>
       </div>
     </div>
